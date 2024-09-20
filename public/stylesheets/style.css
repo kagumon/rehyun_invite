@@ -1,0 +1,193 @@
+html, head, body {
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 500px;
+}
+
+@font-face {
+  font-family: "nritnrit";
+  src: url("/fonts/nritnrit.ttf");
+}
+
+@font-face {
+  font-family: "FromMom";
+  src: url("/fonts/FromMom.ttf");
+}
+
+@font-face {
+  font-family: "NanumSquareRoundB";
+  src: url("/fonts/NanumSquareRoundB.ttf");
+}
+
+@font-face {
+  font-family: "Jalnan2TTF";
+  src: url("/fonts/Jalnan2TTF.ttf");
+}
+
+@font-face {
+  font-family: "MooGoongHwa";
+  src: url("/fonts/MooGoongHwa.ttf");
+}
+
+#main-ctr {
+  position: relative;
+  width: 100%;
+  background-color: #FFF9F3;
+}
+
+#content-ctr {
+  width: 100%;
+  background-color: #FFF9F3;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-bg {
+  position: absolute;
+  animation: beat-bg 3s ease-in-out infinite;
+  background-color: #f8e8d8;
+}
+
+#center-img {
+  position: absolute;
+  width: 56%;
+  height: 46%;
+  background-image: url(/images/rahyun00.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 45% 0 0 calc(22% - 7px);
+  border-radius: 100vw;
+  border: 7px solid #ffffff;
+  box-shadow: 3px 3px 7px #1010101d;
+}
+
+#rabbit-ears-img {
+  position: absolute;
+  width: 150px;
+  top: -50px;
+  right: 0px;
+  animation: rotate-repeat 1s ease-in-out infinite;
+}
+
+#rabbit-img {
+  position: absolute;
+  width: 20%;
+  bottom: 15px;
+  right: 15px;
+}
+
+#main-sub-ctr {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0px;
+  font-family: 'FromMom', serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-size {
+  width: 100%;
+  height: 650px;
+}
+
+.line-img {
+  width: 80%;
+  margin: 0px 10%;
+}
+
+.center-msg {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30px;
+  font-family: 'Jalnan2TTF', serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  letter-spacing: 7px;
+  color: #ffffff;
+  text-shadow: 1px 3px 7px #1010100d;
+}
+
+#parents-ctr {
+  width: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'MooGoongHwa', serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+#letter-ctr {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  width: 75%;
+  margin-left: 12.5%;
+  background-color: #fafafa;
+  border-radius: 100vw;
+  height: 500px;
+  box-shadow: inset 1px 5px 7px #33333218;
+}
+
+#letter-ctr > img {
+  width: 100%;
+  position: absolute;
+}
+
+#letter-top { top: -25px; }
+#letter-bot { bottom: -25px; }
+#letter-msg { 
+  font-family: 'nritnrit', serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 80px 50px;
+}
+#letter-msg > strong {
+  font-size: 1rem;
+}
+.test1 { background-color: #ff123a; }
+.test2 { background-color: #f1f13a; }
+.test3 { background-color: #0aff3a; }
+.test4 { background-color: #3312f1; }
+.test5 { background-color: #3f12aa; }
+.test6 { background-color: #f112f1; }
+
+@keyframes rotate-repeat {
+  0% {
+    transform: rotate(19deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(19deg);
+  }
+}
+
+@keyframes beat-bg {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 75%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+  }
+}
