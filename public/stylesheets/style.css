@@ -131,13 +131,13 @@ body {
   letter-spacing: 10px;
   font-family: 'Jalnan2TTF', serif;
   text-align: center;
-  text-shadow: 1px 1px 2px #ffffff, 0 0 0 #10101076 ;
+  text-shadow: 2px 2px 0px #e6be95aa, 4px 4px 0px #e6be9540;
 }
 
 #made-msg {
   width: 98%;
   font-size: 0.6rem;
-  color: #292727;
+  color: #3d3d3d;
   font-family: 'NanumSquareRoundB', serif;
   text-align: end;
 }
@@ -147,8 +147,8 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 75%;
-  margin-left: 12.5%;
+  width: 84%;
+  margin-left: 8%;
   background-color: #fafafa;
   border-radius: 100vw;
   box-shadow: inset 1px 5px 7px #33333246;
@@ -168,14 +168,14 @@ body {
   font-size: 1.15rem;
   letter-spacing: 1px;
   line-height: 25px;
-  margin: 80px 50px 10px 50px;
+  margin: 80px 40px 10px 40px;
 }
 #letter-msg { 
   font-family: 'Frommom', serif;
   font-size: 1.05rem;
   letter-spacing: 1.2px;
   line-height: 35px;
-  margin: 0px 50px;
+  margin: 0px 40px;
   color: #1f1f1f;
 }
 #letter-footer { 
@@ -185,7 +185,7 @@ body {
   font-size: 0.95rem;
   letter-spacing: 1.2px;
   line-height: 35px;
-  margin: 20px 50px 80px 50px;
+  margin: 20px 40px 80px 40px;
   color: #1f1f1f;
 }
 #letter-msg > strong {
