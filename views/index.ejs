@@ -5,8 +5,8 @@
     <meta property="og:title" content="라현이의 첫돌❤️">
     <meta property="og:description" content="소중한 지인분들을 초대합니다.">
     <meta property="og:image" content="./images/rahyun00.jpg">    
-    <script src="./jquery.js"></script>
-    <script src="./main.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
   </head>
   <body>
@@ -77,12 +77,15 @@
       <div style="height: 40px;"></div>
       <h1 class="title-msg" style="color: #fff">ATTENDANCE</h1>
       <div style="height: 10px;"></div>
-      <div class="sin-inpt-area">* 방문자명&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="text"   placeholder="방문자명"/></div>
-      <div class="sin-inpt-area">* 방문인원&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="number" placeholder="인원수"/></div>
-      <div class="sin-inpt-area">* 전화번호&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="text"   minlength="11" maxlength="13" placeholder="전화번호"/></div>
+      <div class="sin-inpt-area">* 방문자명&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" id="data1" type="text"   placeholder="방문자명"/></div>
+      <div class="sin-inpt-area">* 방문인원&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" id="data2" type="number" placeholder="인원수"/></div>
+      <div class="sin-inpt-area">* 전화번호&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" id="data3" type="number" placeholder="전화번호"/></div>
       <div id="sin-btn">참석의사 전달하기</div>
     </div>
   </body>
+
+  <div id="like-btn"></div>
+  <a id="like-cnt"><%=like%></a>
 </html>
 
 <!--

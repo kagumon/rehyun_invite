@@ -296,6 +296,31 @@ body {
   color: #2b2222;
 }
 
+#like-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  z-index: 100;
+  background-image: url("/images/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 35px;
+  animation: beat-heart 1s ease-in-out infinite;
+}
+
+#like-cnt {
+  width: 50px;
+  height: 20px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  font-family: "FromMom";
+  text-align: center;
+}
+
 .test1 { background-color: #ff123a; }
 .test2 { background-color: #f1f13a; }
 .test3 { background-color: #0aff3a; }
@@ -324,6 +349,24 @@ body {
   }
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+  }
+}
+
+@keyframes beat-heart {
+  0% {
+    background-size: 37px 35px;
+  }
+  10% {
+    background-size: 33px 31px;
+  }
+  20% {
+    background-size: 39px 37px;
+  }
+  40% {
+    background-size: 37px 35px;
+  }
+  100% {
+    background-size: 37px 35px;
   }
 }
 
