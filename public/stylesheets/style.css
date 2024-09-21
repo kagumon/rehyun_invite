@@ -3,6 +3,7 @@ html, head, body {
   height: auto;
   margin: 0px;
   padding: 0px;
+  background-color: #FFF9F3;
 }
 
 body {
@@ -25,6 +26,11 @@ body {
 }
 
 @font-face {
+  font-family: "NanumSquareRoundR";
+  src: url("/fonts/NanumSquareRoundR.ttf");
+}
+
+@font-face {
   font-family: "Jalnan2TTF";
   src: url("/fonts/Jalnan2TTF.ttf");
 }
@@ -37,15 +43,10 @@ body {
 #main-ctr {
   position: relative;
   width: 100%;
-  background-color: #FFF9F3;
 }
 
 #content-ctr {
   width: 100%;
-  background-color: #FFF9F3;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
 }
 
 #main-bg {
@@ -80,7 +81,7 @@ body {
   position: absolute;
   width: 20%;
   bottom: 15px;
-  right: 15px;
+  right: 18%;
 }
 
 #main-sub-ctr {
@@ -95,6 +96,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#main-img {
+  width: 96vw;
+  height: 96vw;
+  margin: 10px 2vw;
+  background-image: url("/images/rahyun00.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-list {
+  display: flex;
+  overflow-x: scroll;
+  padding: 0px 2vw;
+}
+
+#img-list > img {
+  width: 70px;
+  height: 70px;
+  margin: 0px 3px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .main-size {
@@ -118,29 +143,30 @@ body {
   line-height: 2.2rem;
   letter-spacing: 7px;
   color: #ffffff;
-  text-shadow: 1px 3px 7px #1010100d;
+  text-shadow: 2px 2px 0px #e6be95aa, 4px 4px 0px #e6be9540, 6px 6px 0px #e6be9540;
 }
 
-#parents-ctr {
-  width: 100%;
-  padding: 30px 0px;
+.title-msg {
+  width: 100vw;
+  margin-top: 90px;
+  font-size: 1.5rem;
+  color: #ffffffa2;
+  letter-spacing: 10px;
+  font-family: 'Jalnan2TTF', serif;
   text-align: center;
-  line-height: 50px;
-  font-family: 'MooGoongHwa', serif;
-  font-weight: bolder;
-  font-size: 1.4rem;
+  text-shadow: 1px 1px 2px #ffffff, 0 0 0 #10101076 ;
 }
 
 #letter-ctr {
   margin-top: 50px;
   display: flex;
   position: relative;
+  flex-direction: column;
   width: 75%;
   margin-left: 12.5%;
   background-color: #fafafa;
   border-radius: 100vw;
-  height: 500px;
-  box-shadow: inset 1px 5px 7px #33333218;
+  box-shadow: inset 1px 5px 7px #33333246;
 }
 
 #letter-ctr > img {
@@ -150,16 +176,45 @@ body {
 
 #letter-top { top: -25px; }
 #letter-bot { bottom: -25px; }
+#letter-head { 
+  font-family: 'Frommom', serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 80px 50px 10px 50px;
+}
 #letter-msg { 
-  font-family: 'nritnrit', serif;
-  font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  line-height: 30px;
-  margin: 80px 50px;
+  font-family: 'Frommom', serif;
+  font-size: 1.05rem;
+  letter-spacing: 1.2px;
+  line-height: 35px;
+  margin: 0px 50px;
+  color: #1f1f1f;
+}
+#letter-footer { 
+  font-family: 'Frommom', serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 1.2px;
+  line-height: 35px;
+  margin: 20px 50px 80px 50px;
+  color: #1f1f1f;
 }
 #letter-msg > strong {
   font-size: 1rem;
+}
+
+#letter-band {
+  width: 100vw;
+  height: 45%;
+  top: 50%;
+  left: 50%;
+  background-color: #d3b89c;
+  position: absolute;
+  transform: translate(-50vw, -50%);
 }
 .test1 { background-color: #ff123a; }
 .test2 { background-color: #f1f13a; }
@@ -191,3 +246,13 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
   }
 }
+
+/* 스크롤이 안보이게 하는 css */
+.no_scroll {
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+/* Chrome, Safari,Opera */
+.no_scroll::-webkit-scrollbar {display: none !important; }
