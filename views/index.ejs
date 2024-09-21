@@ -25,6 +25,8 @@
       </div>
       <a class="center-msg">HAPPY BIRTHDAY<br>KANG RA HYUN</a>
     </div>
+
+    <div style="height: 40px;"></div>
     <!-- 초대 편지 -->
     <h1 class="title-msg">INVITATION</h1>
     <div style="position: relative;">
@@ -47,6 +49,7 @@
       </div>
     </div>
 
+    <div style="height: 40px;"></div>
     <!-- 사진 -->
     <h1 class="title-msg">VIEW PHOTOS</h1>
     <div id="main-img"></div>
@@ -56,15 +59,29 @@
       <% } %>
     </div>
 
-    <!-- 위치 -->
+    <div style="height: 40px;"></div>
+    <!-- 중요 정보 -->
     <div id="info-ctr">
-      <h1 class="title-msg">INFOMATION</h1>
-      <div>
-        지도랑 남은 시간, 위치, 방문 예정자, 좋아요, 방명록 만들면 끝
-      </div>
-    </div>
+      <div style="height: 40px;"></div>
+      <h1 class="title-msg" style="color: #fff">남은 시간</h1>
+      <a id="time-stamp">10일 11 : 00 : 00</a>
 
-    <h1 id="made-msg">made by uncle. only for ra-hyun.</h1>
+      <div style="height: 40px;"></div>
+      <h1 class="title-msg" style="color: #fff">오시는길</h1>
+      <a class="map-sub" style="font-weight: bolder; font-size: 1.3rem;">유로스퀘어 4층, 마산뷔페파크</a>
+      <a class="map-sub" style="margin: 5px 0px 12px 0px;">마산합포구 해안대로 51 (구, 성지아울렛)</a>
+      <a class="map-sub">지하 1~3층 주차가능 / 055-604-0002</a>
+      <img src="/images/simple-map.png" style="width: 90%; margin-top: 15px; border: 1px solid #d7d5d3;">
+      <a class="map-sub">< 약도 ></a>
+
+      <div style="height: 40px;"></div>
+      <h1 class="title-msg" style="color: #fff">ATTENDANCE</h1>
+      <div style="height: 10px;"></div>
+      <div class="sin-inpt-area">* 방문자명&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="text"   placeholder="방문자명"/></div>
+      <div class="sin-inpt-area">* 방문인원&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="number" placeholder="인원수"/></div>
+      <div class="sin-inpt-area">* 전화번호&nbsp;&nbsp;&nbsp;<input class="sin-inpt-box" type="text"   minlength="11" maxlength="13" placeholder="전화번호"/></div>
+      <div id="sin-btn">참석의사 전달하기</div>
+    </div>
   </body>
 </html>
 

@@ -40,6 +40,11 @@ body {
   src: url("/fonts/MooGoongHwa.ttf");
 }
 
+@font-face {
+  font-family: "JalnanGothicTTF";
+  src: url("/fonts/JalnanGothicTTF.ttf");
+}
+
 #main-ctr {
   position: relative;
   width: 100%;
@@ -124,8 +129,7 @@ body {
 
 .title-msg {
   width: 100%;
-  margin-top: 50px;
-  padding-top: 40px;
+  margin-top: 40px;
   font-size: 1.5rem;
   color: #ffffffa2;
   letter-spacing: 10px;
@@ -228,8 +232,68 @@ body {
 }
 
 #info-ctr {
-  background-color: #9a734d;
-  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  background-color: #f8e8d8;
+  padding-bottom: 50px;
+  margin-top: 40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0px -5px 10px #2b292731;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sin-btn {
+  margin: 20px 0px 40px 0px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  width: 80%;
+  height: 50px;
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'NanumSquareRoundB', serif;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 1.2px;
+}
+
+.sin-inpt-box {
+  width: 50%;
+  padding: 8px 10px;
+  border: 0px;
+  background-color: #ffffff;
+  margin: 5px 0px;
+}
+
+.sin-inpt-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'NanumSquareRoundR', serif;
+  font-size: 0.85rem;
+  color: #232323;
+}
+
+.map-sub {
+  color: #1b1b1b;
+  font-family: 'NanumSquareRoundR', serif;
+  font-size: 1.0rem;
+  margin: 15px 0px 0px 0px;
+}
+
+#time-stamp {
+  font-size: 1.4rem;
+  font-family: "JalnanGothicTTF";
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #2b2222;
 }
 
 .test1 { background-color: #ff123a; }
